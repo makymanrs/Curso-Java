@@ -17,11 +17,12 @@ public class EjemploStringTestRendimientoConcat {
 
 
         }
+        System.gc();//recolector de basura - liberar de espacios cuando usamos muchas instancias
 
         long fin = System.currentTimeMillis();
         System.out.println(fin - inicio);
         System.out.println("c = " + c);
         System.out.println("sb = " +sb.toString());
-
+        System.exit(0);
     }
 }
